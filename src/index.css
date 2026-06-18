@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@import "tailwindcss";
+
+/* =============================================
+   remind.u Design System — Tailwind v4 CSS Config
+   ============================================= */
+@theme {
+  /* === Brand Colors === */
+  --color-background: #E3FDFA;
+  --color-surface: #FFFFFF;
+  --color-sidebar: #DDF5F2;
+  --color-primary: #076559;
+  --color-secondary: #6CA8A5;
+  --color-accent: #B5DBD9;
+  --color-success: #14C97A;
+  --color-text-primary: #070808;
+  --color-text-secondary: #635C5D;
+  --color-border-custom: #D2ECE9;
+
+  /* === Material Design Extended Palette === */
+  --color-on-error-container: #93000a;
+  --color-outline: #6f7976;
+  --color-on-surface: #1f1a1b;
+  --color-surface-variant: #eae0e1;
+  --color-surface-dim: #e2d8d8;
+  --color-error: #ba1a1a;
+  --color-surface-container-highest: #eae0e1;
+  --color-on-tertiary-fixed: #00201f;
+  --color-primary-fixed: #a4f1e1;
+  --color-on-primary: #ffffff;
+  --color-surface-bright: #fff8f8;
+  --color-tertiary-container: #3c605f;
+  --color-inverse-primary: #88d5c5;
+  --color-on-secondary-container: #306e6b;
+  --color-on-primary-fixed-variant: #005046;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-fixed: #c4eae8;
+  --color-on-surface-variant: #3f4946;
+  --color-on-background: #1f1a1b;
+  --color-tertiary: #244847;
+  --color-surface-container-high: #f0e6e7;
+  --color-on-tertiary-fixed-variant: #294d4b;
+  --color-secondary-fixed-dim: #95d2ce;
+  --color-surface-container-low: #fcf1f2;
+  --color-on-secondary-fixed-variant: #064f4d;
+  --color-outline-variant: #bec9c5;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-container: #b3d9d7;
+  --color-error-container: #ffdad6;
+  --color-on-primary-container: #92dfd0;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-fixed-dim: #a8cecc;
+  --color-primary-container: #076559;
+  --color-secondary-fixed: #b0eeea;
+  --color-inverse-on-surface: #f9eeef;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-container: #b0eeea;
+  --color-inverse-surface: #352f30;
+  --color-surface-container: #f6ebec;
+  --color-on-primary-fixed: #00201b;
+  --color-on-secondary-fixed: #00201f;
+  --color-surface-tint: #126a5e;
+  --color-primary-fixed-dim: #88d5c5;
+  --color-danger: #E5484D;
+
+  /* === Border Radius === */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* === Spacing === */
+  --spacing-container-padding-desktop: 32px;
+  --spacing-base: 8px;
+  --spacing-container-padding-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-sidebar-width: 280px;
+
+  /* === Typography === */
+  --font-headline-xl: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+
+  /* === Box Shadows === */
+  --shadow-level-1: 0 4px 20px rgba(7, 101, 89, 0.08);
+  --shadow-level-2: 0 4px 6px -1px rgba(7, 101, 89, 0.12), 0 2px 4px -1px rgba(7, 101, 89, 0.08);
+
+  /* === Animations === */
+  --animate-pulse-border: pulse-border 2s infinite;
+
+  @keyframes pulse-border {
+    0%   { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0.4); }
+    70%  { box-shadow: 0 0 0 6px rgba(186, 26, 26, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0); }
+  }
+}
+
+/* =============================================
+   Base Styles
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =============================================
+   Material Symbols Outlined
+   ============================================= */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  line-height: 1;
+  user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* =============================================
+   Component Utilities
+   ============================================= */
+.card-level-1 {
+  box-shadow: var(--shadow-level-1);
+}
+
+.zona-merah-pulse {
+  animation: var(--animate-pulse-border);
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Optimize CSS variables */
