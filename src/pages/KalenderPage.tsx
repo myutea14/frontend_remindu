@@ -162,7 +162,7 @@ const KalenderPage: React.FC = () => {
     })
     .map(t => ({
       id: t.id,
-      time: new Date(t.deadline).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }),
+      time: new Date(t.deadline.replace(' ', 'T')).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }),
       title: t.title,
       type: t.output_type || 'Tugas',
       load: t.load_type || 'Sedang',
