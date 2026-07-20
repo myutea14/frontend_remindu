@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// UX Polish: avatar preview and save confirmation toast
 import WhatsAppIcon from '../components/ui/WhatsAppIcon';
 import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
