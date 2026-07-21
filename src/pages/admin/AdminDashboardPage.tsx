@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+// UX Polish: real-time user count chart
 import axios from 'axios';
 import { useAuth } from '../../context/AuthContext';
 
