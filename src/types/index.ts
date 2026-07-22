@@ -35,7 +35,7 @@ export interface Task {
   created_at: string;
   updated_at: string;
   group?: { id: number; name: string } | null;
-  user?: { id: number; name: string } | null;
+  user?: { id: number; name: string; avatar?: string | null; avatar_url?: string | null } | null;
 }
 
 export type OutputType = 'Tugas' | 'Kuis / Ujian' | 'Organisasi' | 'Pribadi';
