@@ -38,7 +38,7 @@ export interface Task {
   user?: { id: number; name: string; avatar?: string | null; avatar_url?: string | null } | null;
 }
 
-export type OutputType = 'Tugas' | 'Kuis / Ujian' | 'Organisasi' | 'Pribadi';
+export type OutputType = 'Tugas' | 'Kuis / Ujian' | 'Komunitas' | 'Pribadi';
 export type LoadType = 'Ringan' | 'Sedang' | 'Berat';
 export type InvolvementType = 'Pribadi' | 'Kelompok';
 export type TaskStatus = 'todo' | 'in_progress' | 'done' | 'overdue';

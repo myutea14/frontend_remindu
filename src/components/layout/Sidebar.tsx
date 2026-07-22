@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import WhatsAppIcon from '../ui/WhatsAppIcon';
 import { useAuth } from '../../context/AuthContext';
 import logo from '../../assets/logo-remindu.png';
 import { getLevelIcon } from '../../utils/level';

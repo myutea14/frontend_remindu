@@ -9,11 +9,11 @@ import { useSearchParams } from 'react-router-dom';
 const typeColors: Record<string, string> = {
   'Tugas': 'bg-blue-100 text-blue-700',
   'Kuis / Ujian': 'bg-purple-100 text-purple-700',
-  'Organisasi': 'bg-indigo-100 text-indigo-700',
+  'Komunitas': 'bg-indigo-100 text-indigo-700',
   'Pribadi': 'bg-orange-100 text-orange-700',
 };
 
-const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Organisasi', 'Pribadi'];
+const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Komunitas', 'Pribadi'];
 const LOAD_TYPES: LoadType[] = ['Ringan', 'Sedang', 'Berat'];
 
 const getLocalISODate = () => {

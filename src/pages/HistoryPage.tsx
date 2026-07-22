@@ -81,7 +81,7 @@ const HistoryPage: React.FC = () => {
     const existingGroup = acc.find((g) => g.label === dateLabel);
     
     // Determine category text: if it's a group task, use group name or fallback to 'Komunitas'
-    const categoryName = log.task?.group?.name || (log.task?.output_type === 'Organisasi' ? 'Komunitas' : log.task?.output_type) || 'Lainnya';
+    const categoryName = log.task?.group?.name || log.task?.output_type || 'Lainnya';
     
     const task: HistoryTask = {
       id: log.id,

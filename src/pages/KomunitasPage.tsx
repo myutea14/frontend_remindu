@@ -53,7 +53,7 @@ const kanbanCols: { id: KanbanStatus; label: string; icon: string; color: string
   { id: 'done',        label: 'Done',         icon: 'check_circle',           color: 'text-success' },
 ];
 
-const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Organisasi', 'Pribadi'];
+const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Komunitas', 'Pribadi'];
 const LOAD_TYPES: LoadType[] = ['Ringan', 'Sedang', 'Berat'];
 
 const getLocalISODate = () => {
@@ -165,7 +165,7 @@ const KomunitasPage: React.FC = () => {
     title: '',
     description: '',
     deadline: '',
-    output_type: 'Organisasi',
+    output_type: 'Komunitas',
     load_type: 'Ringan',
     involvement_type: 'Kelompok',
     assign_to_all: false,
@@ -391,7 +391,7 @@ const KomunitasPage: React.FC = () => {
         title: '',
         description: '',
         deadline: '',
-        output_type: 'Organisasi',
+        output_type: 'Komunitas',
         load_type: 'Ringan',
         involvement_type: 'Kelompok',
         assign_to_all: false,

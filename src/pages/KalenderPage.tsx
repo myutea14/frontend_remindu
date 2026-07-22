@@ -15,7 +15,7 @@ interface CalendarDay {
 const typeColors: Record<string, string> = {
   'Tugas': 'bg-blue-100 text-blue-700',
   'Kuis / Ujian': 'bg-purple-100 text-purple-700',
-  'Organisasi': 'bg-yellow-100 text-yellow-700',
+  'Komunitas': 'bg-yellow-100 text-yellow-700',
   'Pribadi': 'bg-orange-100 text-orange-700',
 };
 
@@ -25,7 +25,7 @@ const MONTHS = [
   'Juli','Agustus','September','Oktober','November','Desember',
 ];
 
-const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Organisasi', 'Pribadi'];
+const OUTPUT_TYPES: OutputType[] = ['Tugas', 'Kuis / Ujian', 'Komunitas', 'Pribadi'];
 const LOAD_TYPES: LoadType[] = ['Ringan', 'Sedang', 'Berat'];
 
 const getLocalISODate = () => {

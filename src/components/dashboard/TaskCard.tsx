@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from '../ui/Badge';
 
 export type TaskStatus = 'todo' | 'in_progress' | 'done';
-export type OutputType = 'Tugas' | 'Kuis / Ujian' | 'Organisasi' | 'Pribadi';
+export type OutputType = 'Tugas' | 'Kuis / Ujian' | 'Komunitas' | 'Pribadi';
 export type LoadType = 'Ringan' | 'Sedang' | 'Berat';
 
 export interface Task {

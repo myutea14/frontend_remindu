@@ -33,11 +33,11 @@ const HistoryTaskCard: React.FC<HistoryTaskCardProps> = ({ task }) => {
             {task.title}
           </h4>
           <div className="flex flex-wrap items-center gap-2">
-            {task.category === 'Organisasi' || task.isGroupTask ? (
-              <span className="px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-full text-[11px] font-semibold flex items-center gap-1">
-                <span className="material-symbols-outlined text-[12px]">groups</span>
-                {task.category === 'Organisasi' ? 'Komunitas' : task.category}
-              </span>
+            {task.category === 'Komunitas' || task.isGroupTask ? (
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mt-1 self-start">
+                <span className="material-symbols-outlined text-[14px]">groups</span>
+                {task.category}
+              </div>
             ) : (
               <span className="px-2 py-0.5 bg-accent/60 text-secondary rounded-full text-[11px] font-semibold">
                 {task.category}
