@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// UX Polish: drag-to-reorder and bulk delete feature
 import api from '../services/api';
 import type { Task, TaskCreatePayload, TaskUpdatePayload, OutputType, LoadType } from '../types';
 import TimePicker24 from '../components/ui/TimePicker24';

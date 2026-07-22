@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useAuth } from '../../context/AuthContext';
 
 // Admin Users Page
+// UX Polish: pagination and role filter
 interface User {
   id: number;
   name: string;
