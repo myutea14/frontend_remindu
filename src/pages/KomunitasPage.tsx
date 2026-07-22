@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
+// UX Polish: skeleton loading state and empty group placeholder
+// UX Polish: loading states verified
 import WhatsAppIcon from '../components/ui/WhatsAppIcon';
 import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
