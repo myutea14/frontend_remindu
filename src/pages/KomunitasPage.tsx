@@ -398,8 +398,9 @@ const KomunitasPage: React.FC = () => {
         assigned_to: user?.id,
       });
       fetchGroupTasks(activeGroup.id);
-    } catch (error) {
-      alert("Gagal menambah tugas grup.");
+    } catch (error: any) {
+      console.error(error.response?.data);
+      alert("Gagal menambah tugas grup: " + (error.response?.data?.message || JSON.stringify(error.response?.data)));
     } finally {
       setIsAddingTask(false);
     }

@@ -106,6 +106,7 @@ const App: React.FC = () => {
                 <AdminLayout />
               </AdminProtectedRoute>
             }>
+              
               <Route index element={<AdminDashboardPage />} />
               <Route path="users" element={<AdminUsersPage />} />
               <Route path="groups" element={<AdminGroupsPage />} />
@@ -124,3 +125,4 @@ const App: React.FC = () => {
 
 export default App;
 // Refactor global provider wrapper
+//pembaruan terbaru route

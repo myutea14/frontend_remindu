@@ -277,7 +277,7 @@ const ReminderPage: React.FC = () => {
                     </span>
                     <span className="w-1 h-1 rounded-full bg-border-custom"></span>
                     <span className={`px-2 py-0.5 rounded-full text-[11px] font-semibold flex items-center gap-1 ${typeColors[task.output_type] || 'bg-gray-100 text-gray-700'}`}>
-                      {task.output_type === 'Organisasi' ? (
+                      {task.output_type === 'Komunitas' ? (
                         <>
                           <span className="material-symbols-outlined text-[14px]">groups</span>
                           {task.group?.name || 'Komunitas'}

@@ -160,7 +160,7 @@ export interface XpLog {
   level_at_event: number;
   points?: number;
   created_at: string;
-  task?: { id: number; output_type: OutputType; load_type: LoadType; group_id?: number | null } | null;
+  task?: { id: number; output_type: OutputType; load_type: LoadType; group_id?: number | null; group?: { id: number; name: string } | null } | null;
 }
 
 // ─── Paginated Response ──────────────────────────────────────────────────────
